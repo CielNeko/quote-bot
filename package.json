@@ -26,7 +26,7 @@
     "mongoose": "^5.13.2",
     "openai": "^4.26.0",
     "prom-client": "^12.0.0",
-    "sharp": "^0.30.5",
+    "sharp": "^0.32.6",
     "tdl": "^7.1.0",
     "tdl-tdlib-addon": "^1.0.1",
     "telegraf": "^3.39.0",
