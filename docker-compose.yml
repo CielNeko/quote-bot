@@ -2,7 +2,7 @@ version: '3'
 
 services:
     bot:
-        image: ghcr.io/cielneko/quote-bot
+        image: b89ede331e28
         env_file: .env-bot
         restart: always
         logging:
@@ -25,7 +25,7 @@ services:
         networks:
             - quotly
     api:
-        image: ghcr.io/cielneko/quote-api
+        image: 6e4733a6b16f
         env_file: .env-api
         restart: always
         logging:
@@ -33,6 +33,8 @@ services:
             options:
                 max-size: "10m"
                 max-file: "3"
+        volumes:
+            - ./fonts:/usr/share/fonts
         networks:
             - quotly
         command: node index.js
