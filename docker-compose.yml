@@ -2,7 +2,7 @@ version: '3'
 
 services:
     bot:
-        image: b89ede331e28
+        image: ghcr.io/cielneko/quote-bot
         env_file: .env-bot
         restart: always
         logging:
@@ -25,7 +25,7 @@ services:
         networks:
             - quotly
     api:
-        image: 6e4733a6b16f
+        image: ghcr.io/cielneko/quote-api
         env_file: .env-api
         restart: always
         logging:
